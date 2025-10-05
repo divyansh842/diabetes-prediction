@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-
+import os
 # Load the trained model
 BASE_DIR = os.path.dirname(__file__)
 scaler_path = os.path.join(BASE_DIR, "scaler.pkl")
