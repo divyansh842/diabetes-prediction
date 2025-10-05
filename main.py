@@ -2,14 +2,24 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
+import streamlit as st
+import pickle
+import numpy as np
 import os
-# Load the trained model
+
+# Get absolute paths
 BASE_DIR = os.path.dirname(__file__)
 scaler_path = os.path.join(BASE_DIR, "scaler.pkl")
+model_path = os.path.join(BASE_DIR, "diabetes_model.pkl")
 
+# Load model and scaler safely
 with open(scaler_path, "rb") as f:
     scaler = pickle.load(f)
-model = pickle.load(open('diabetes_model.pkl', 'rb'))
+
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
+
+# model = pickle.load(open('diabetes_model.pkl', 'rb'))
 st.title("🩺 Diabetes Prediction App")
 st.write("Enter your health details below to check if you might have diabetes.")
 
