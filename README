@@ -1,0 +1,32 @@
+🩺 Diabetes Prediction App
+
+A simple and interactive web app that predicts whether a person is likely to have Diabetes based on medical attributes such as glucose level, BMI, blood pressure, and insulin — powered by a Support Vector Machine (SVM) model and deployed using Streamlit.
+
+🚀 Demo
+
+🔗 Live App: https://diabetes-prediction123.streamlit.app/
+
+🧠 Project Overview
+
+This project uses the PIMA Diabetes dataset to train a machine learning model that classifies whether a person is diabetic or not.
+The app provides a user-friendly interface for real-time prediction.
+
+🧩 Features
+
+✅ Clean and responsive Streamlit interface
+✅ Predicts diabetes likelihood based on user input
+✅ Uses SVM model for accurate classification
+✅ Data preprocessing with StandardScaler
+✅ End-to-end pipeline — from model training to web deployment
+
+⚙️ Tech Stack
+Python
+Streamlit
+Scikit-learn
+Pandas
+NumPy
+
+📊 Dataset
+
+The model is trained on the PIMA Indians Diabetes Dataset
+Available on Kaggle: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
